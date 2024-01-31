@@ -30,7 +30,7 @@ This repository contains the following files and directories:
 - **notebooks**: This directory contains Jupyter notebooks that demonstrate the clustering process and analysis step-by-step. It includes detailed explanations of the algorithms used and their implementation.
 - **results**: This directory holds the clustering results, such as the grouped clusters and their corresponding titles. It also includes any visualizations or insights derived from the clustering analysis.
 - **README.md**: This file provides an overview of the repository, its objectives, the clustering process, benefits, and repository structure.
-- 
+
 ## Usage
 To use this repository, follow these steps:
 1. Clone the repository to your local machine using the following command:
