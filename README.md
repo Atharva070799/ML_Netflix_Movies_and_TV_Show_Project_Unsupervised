@@ -17,9 +17,8 @@ The clustering process involves analyzing various data points, including genre, 
 The algorithms work as follows:
 
 - **K-means**: This algorithm partitions the data into k clusters, where k is predefined. It iteratively assigns data points to the nearest centroid and adjusts the centroid positions based on the assigned points. K-means is effective for clustering movies and TV shows with similar features into distinct groups representing unique genres or categories.
-- 
 - **Hierarchical Clustering**: This technique creates a tree-like structure that organizes movies and TV shows into similar categories based on their characteristics. It starts with each title as a separate cluster and iteratively merges clusters based on their similarity, forming a hierarchical structure.
-- 
+
 ## Benefits
 Clustering is a powerful tool that enables Netflix to analyze and group its vast library of content into similar categories, providing users with personalized recommendations and improving the overall user experience. Some key benefits of clustering include:
 1. **Personalized Recommendations**: By leveraging clustering techniques and analyzing users' viewing history and preferences, Netflix can recommend content that aligns with their interests. This personalized approach increases user engagement, satisfaction, and the likelihood of users continuing their subscriptions.
