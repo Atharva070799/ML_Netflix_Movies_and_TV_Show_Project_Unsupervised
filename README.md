@@ -12,6 +12,68 @@ Netflix is a subscription-based streaming service that provides its members with
 ## Objective
 The primary objective of Netflix Movies and TV Shows Clustering is to enhance the user experience on Netflix by providing personalized content recommendations based on viewers' preferences and viewing history. By organizing the content library into clusters, Netflix aims to suggest titles that are more likely to match user interests, resulting in increased user engagement, satisfaction, and ultimately, improved retention and revenue for the company.
 
+## Dataset
+Netflix_movies_and_series_dataset_link:- https://drive.google.com/file/d/1EuTT5bkkO1kdgVuih1tsBrOhS1ya5OjY/view?usp=sharing
+
+**show_id** : Unique ID for every Movie / Tv Show
+
+**type** : Identifier - A Movie or TV Show
+
+**title** : Title of the Movie / Tv Show
+
+**director** : Director of the Movie
+
+**cast** : Actors involved in the movie / show
+
+**country** : Country where the movie / show was produced
+
+**date_added** : Date it was added on Netflix
+
+**release_year** : Actual Releaseyear of the movie / show
+
+**rating** : TV Rating of the movie / show
+
+**duration** : Total Duration - in minutes or number of seasons
+
+**listed_in** : Genere
+
+**description** : The Summary description
+
+## Conclusion
+**CONCLUSION FROM EDA:**
+
+1) Netflix has more movies than TV shows available on the platform.
+
+2) The majority of content on Netflix is suitable for mature audiences, with a TV-MA rating being the most common.
+
+3) The United States is the country with the highest number of productions available on Netflix, followed by India and the United Kingdom.
+
+4) Netflix has seen a steady increase in its content library since its inception in 2008.
+
+5) The most common genre of content on Netflix is Dramas, followed by Comedies and Documentries.
+
+6) The Wordcloud visualization of movie descriptions shows that some of the most common words used in Netflix movie descriptions include love, family, young, life, and world.
+
+7) The correlation heatmap shows that there is a moderate positive correlation between the duration of a movie and its release year.
+
+8) The pairplot shows some interesting patterns between variables such as the strong positive correlation between the number of reviews and the year of release, as well as a negative correlation between the rating and duration of a movie.
+
+**CONCLUSION FROM MODEL IMPLEMENTATION:**
+
+1) The data was clustered based on the attributes: director, cast, country, genre, rating, and description.
+
+2) TFIDF vectorizer was used to tokenize, preprocess, and vectorize the values in these attributes, creating a total of 20000 attributes.
+
+3) Principal Component Analysis (PCA) was used to reduce the dimensionality of the data which captured more than 90% of the variance.
+
+4) **K-Means Clustering** algorithm was used to build clusters with the optimal number of clusters being **6** based on the elbow method and Silhouette score analysis.
+
+5) **Agglomerative clustering** algorithm was used to build clusters with the optimal number of clusters being **9** based on the dendrogram visualization.
+
+6) A content-based **recommender system** was built using cosine similarity and will make 10 recommendations to the user based on the type of show they watched.
+
+7) **DBSCAN clustering** was built and it gives optimal number of clusters as 21 with very less metric score.
+
 ## Clustering Process
 The clustering process involves analyzing various data points, including genre, cast, director, plot, and other relevant features, to identify patterns and similarities between different titles. Netflix employs unsupervised machine learning algorithms such as k-means, hierarchical clustering, and principal component analysis (PCA) to group movies and TV shows with similar features into distinct clusters or categories.
 The algorithms work as follows:
